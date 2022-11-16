@@ -12,7 +12,7 @@ if (size < 2)
 	return;
 
 j = (int)size;
-for (h = 0; h < size; h++)
+for (h = 0; h < j; h++)
 {
 	for (k = 0; k < j - h - 1; k++)
 	{
