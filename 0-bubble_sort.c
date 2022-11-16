@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * bubble_sort - sorts an array of integers with bubble sort algorithm
  * @array: array to be sorted
@@ -6,15 +7,15 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-int hold, h, k, j;
+size_t h, k, j;
+int hold;
 
 if (size < 2)
 	return;
 
-j = (int)size;
-for (h = 0; h < j; h++)
+for (h = 0; h < size; h++)
 {
-	for (k = 0; k < j - h - 1; k++)
+	for (k = 0; k < size - h - 1; k++)
 	{
 		if (array[k] > array[k + 1])
 		{
